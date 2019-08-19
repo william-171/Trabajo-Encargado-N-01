@@ -1,0 +1,98 @@
+
+\documentclass[preprint,12pt]{elsarticle}
+
+\usepackage[spanish]{babel}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lineno}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{natbib}
+
+\begin{document}
+	
+	\begin{frontmatter}
+
+		\title{\huge LAS NUEVAS CARACTERISTICAS DE UN ESTANDAR ISO/IEC 9075:2011}
+		
+		\author{Huillca Umpiri, Willian Arturo (2015053793)}
+
+		
+		\address{Tacna, Perú}
+		
+		\begin{abstract}
+			%% Text of abstract
+ISO / IEC 9075 define el lenguaje de consulta estructurado (SQL). El alcance de SQL es la definición de la estructura de datos y las operaciones sobre los datos almacenados en esa estructura. ISO / IEC 9075-1, ISO / IEC 9075-2 e ISO / IEC 9075-11 abarcan los requisitos mínimos del idioma. Otras partes definen extensiones.
+		\end{abstract}
+\end{frontmatter}
+
+	\section{Resumen}
+	
+ISO / IEC 9075-1: 2011 describe el marco conceptual utilizado en otras partes de ISO / IEC 9075 para especificar la gramática de SQL y el resultado del procesamiento de declaraciones en ese lenguaje mediante una implementación de SQL.
+
+\section{Introduccion}
+
+Las normas ISO se crearon con la finalidad de ofrecer orientacion, coor- dinacion, simplificacion y unificacion de criterios a las empresas y organiza- ciones con el objeto de reducir costes y aumentar la efectividad, asi como estandarizar las normas de productos y servicios para las organizaciones in- ternacionales. Las normas ISO se han desarrollado y adoptado por multitud de empresas de muchos paises por una necesidad y voluntad de homogeneizar las caracteristicas y los parametros de calidad y seguridad de los productos y servicios.
+
+
+\section{Marco Teorico}
+	
+\subsection{SQL:2011 is the ISO/IEC 9075:2011}	
+
+SQL: 2011 o ISO / IEC 9075: 2011 (bajo el tıtulo general ”Tecnologıa de la informacion - Lenguajes de base de datos - SQL”) es la septima revision del  estandar  ISO  (1987)  y  ANSI  (1986)  para  el  lenguaje  de  consulta  de  la base de datos SQL . Fue adoptado formalmente en diciembre de 2011. [1] El estandar consta de 9 partes que se describen en detalle en SQL .
+
+\subsection{Nuevas Funciones}	
+
+Una de las principales caracterısticas nuevas es el soporte mejorado para bases  de  datos  temporales  .  Las  mejoras  del  lenguaje  para  la  definicion  y manipulacion de datos temporales incluyen:
+\begin{itemize}
+
+\item Las  definiciones  de  Perıodo  de  tiempo  usan  dos  columnas  de  tabla estandar como el inicio y el final de un perıodo de tiempo con nombre, con  una  semantica  abierta-cerrada  Esto  proporciona  compatibilidad con modelos de datos existentes, codigo de aplicacion y herramientas.
+
+\item Definicion de tablas de perıodos de tiempo de aplicacion (en otras partes llamadas tablas de tiempo validas ), usando la PERIOD FOR anotacion.
+
+\item Actualizacion y eliminacion de filas de tiempo de aplicacion con division automatica de perıodos de tiempo.
+
+\item Claves primarias temporales que incorporan perıodos de tiempo de aplicacion con restricciones opcionales no superpuestas a traves de la WIT- HOUT OVERLAPSclausula.
+
+\item Restricciones de integridad referencial temporal para tablas de tiempo de aplicacion.
+
+\item Tablas de tiempo de aplicacion se consultan usando la sintaxis de consulta regular o el uso de nuevos predicados temporales por perıodos de tiempo que incluye CONTAINS, OVERLAPS, EQUALS, PRECEDES,SUCCEEDS, IMMEDIATELY PRECEDES, y IMMEDIATELY SUCCEEDS(que son versiones modificadas de las relaciones de intervalos de Allen ).
+
+\item Los perıodos de tiempo del sistema se mantienen automaticamente. No se requiere que las restricciones para las tablas con versiones del sistema sean temporales y solo se aplican en las filas actuales.
+
+\item Sintaxis para el tiempo en rodajas y secuenciado consultas en tablas de tiempo del sistema a traves de la AS OF SYSTEM TIMEy VERSIONS BETWEEN SYSTEM TIME ... AND ...clausulas.
+
+\item El tiempo de aplicacion y el control de versiones del sistema se pueden usar juntos para proporcionar tablas bitemporales.
+
+\item Actualizacion y eliminacion de filas de tiempo de aplicacion con division automatica de perıodos de tiempo.
+\end{itemize}
+
+
+En resumen, ambas herramientas son diferentes y sirven a distintos propositos.  Si  su  empresa  ya  tiene  un  deposito  de  datos  establecido, puede optar por implementar un data lake cercano para solucionar algunas de las limitaciones que experimenta el primero (como ya hemos visto).  Para  determinar  que  solucion  es  la  mejor  para  su  caso,  debe comenzar por poner encima de la mesa el objetivo que quiere alcanzar y utilizar.
+
+\section{Analisis}
+\begin{itemize}
+\subsection{SQL:2011 is the ISO/IEC 9075:2011 standard of 2011}
+
+\item Datos temporales (PERIOD FOR). Mejoras en las funciones de ventana y de la clausula FETCH.
+\end{itemize}
+
+\section{Conclusion}
+
+\begin{itemize}
+\item A traves del tiempo, se han mejorado las distintas herramientas que ahora conocemos para su uso correcto, y gracias a ellos, podemos aprender de una manera mas sencilla y didactica acerca de su funcionalidad y uso.
+\item Asi tambien como los diferentes usos que se les puede dar y las diferentes informaciones que pueden proporcionar para un mejor uso de los datos.
+
+\end{itemize}
+
+\section{Bibliografia}
+
+\begin{itemize}
+\item[1]	Database. SQL Fundamentals.
+\item[2]    TECNOLOGÍA DE LA INFORMACIÓN - LENGUAJES DE BASES DE DATOS - SQL.
+\item[3]	Caracterısticas temporales en SQL: 2011 ”. ACM SIGMOD Record 41.3 (2012): 34-43 Un enfoque practico de SQL.
+
+\end{itemize}
+
+\end{document}
+
